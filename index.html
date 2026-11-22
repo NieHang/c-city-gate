@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>Claude 入境处</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="stage"></canvas>
+  <!-- Static first screen: shown before game.js runs, removed by main.js once the game is ready. -->
+  <div id="boot" role="status" aria-live="polite">
+    <h1>Claude 入境处</h1>
+    <p>你是入境处的风控审查官：看清每份入境档案，决定放行还是封号。</p>
+    <p class="boot-wait">正在打开窗口…若长时间没有反应，请退出后重新打开。</p>
+  </div>
+  <!-- The ONLY script. Classic (not type=module), external, built by tools/build.mjs. -->
+  <script src="./game.js" defer></script>
+</body>
+</html>
